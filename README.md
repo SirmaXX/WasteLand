@@ -1,2 +1,2 @@
-# Recycling_for_goverment
-Recycling management systems for city hall 
+# WasteLand
+Açık Kaynak Geri dönüşüm Platformu
