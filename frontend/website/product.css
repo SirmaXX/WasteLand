@@ -46,7 +46,7 @@ body{
   }
 
   .menucolor{
-    background-color: var(--yesil); ;
+    background-color: var( --kyesil);
   }
  
   .donate{color:var( --acikmavi);}
