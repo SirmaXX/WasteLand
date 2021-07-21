@@ -1,7 +1,6 @@
 <%- include('./partials/head.ejs') %>
   <body>
-    <%- include('./partials/navbar.ejs') %>
-
+    <%- include('./partials/navbar.ejs', {active: title}); %>
     <main>
       <div class="container text-center mt-3">
         <div class="col-sm-12 text-left mb-3">
