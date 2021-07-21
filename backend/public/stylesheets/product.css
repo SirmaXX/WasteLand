@@ -1,0 +1,87 @@
+/*
+
+beyaz F4F6F6
+yesil A6A65D
+gri D1D1D1
+acıkmavi 7293AE
+mavi  334256
+*/ 
+:root {
+    --beyaz: #F4F6F6;
+    --yesil:#A6A65D;
+    --kyesil:#749F85;
+    --gri:#D1D1D1;
+    --acikmavi:#7293AE;
+    --mavi:#334256;
+  }
+
+  @font-face {
+    font-family: abel-regular;
+    src: url(fonts/abel/Abel-Regular.ttf);
+  }
+  @font-face {
+    font-family: archer;
+    src: url(fonts/Archer-Font/Archer-Medium-Pro.otf);
+  }
+body{
+    font-family: archer;
+    background-color: var(--gri);
+}
+.contactpage{
+    background-color: var(--beyaz);
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .menucolor{
+    background-color: var( --kyesil);
+  }
+ 
+  .donate{color:var( --acikmavi);}
+  .card-header-color {
+    background-color: var(--mavi);
+    color:var( --beyaz);
+  }
+  .card-header-color-1 {
+    background-color: var(--acikmavi);
+    color:var( --beyaz);
+  }
+  .card-header-color-2 {
+    background-color: var( --kyesil);
+    color:var( --beyaz);
+  }
+  .user-timing {
+    right: 9px;
+    bottom: 9px;
+    color: #fff
+}
+
+.views-content {
+    color: #606271
+}
+
+.views {
+    font-size: 12px
+}
+
+.dots {
+    display: flex;
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-bottom: 6px
+}
