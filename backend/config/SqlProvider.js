@@ -6,7 +6,7 @@ var con = mysql.createConnection({
     password: "Sence26es_"
   });
   
-exports.create=function CreateDatabase(con,tablename){
+exports.CreateDB=function CreateDatabase(con,tablename){
   con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
@@ -17,7 +17,7 @@ exports.create=function CreateDatabase(con,tablename){
   });
 }
 
- exports.add = function Insert(con,tables,colomns,values){
+ exports.CreateRecord = function Insert(con,tables,colomns,values){
   con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
@@ -25,6 +25,18 @@ exports.create=function CreateDatabase(con,tablename){
     con.query(sql, function (err, result) {
       if (err) throw err;
       console.log("1 record inserted");
+    });
+  });
+ }
+
+ exports.DeleteRecord= function Delete(con,tables,colomns,values){
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    var sql = "DELETE FROM "+tables+" WHERE " +colomns +" =" + values ;
+    con.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("Number of records deleted: " + result.affectedRows);
     });
   });
  }

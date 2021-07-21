@@ -1,3 +1,6 @@
+const SqlProvider =require('../config/SqlProvider');
+
+
 class Event {
   constructor(id,name,hours, date, place, img) {
     this.id = id;
@@ -7,6 +10,12 @@ class Event {
     this.place = place;
     this.img = img;
   }
+
+ AddEvent(){}
+ DeleteEvent(){}
+
+
+
 }
 
 class News {
@@ -15,4 +24,6 @@ class News {
     this.name = name;
    
   }
+  AddNews(){}
+  DeleteNews(){}
 }
